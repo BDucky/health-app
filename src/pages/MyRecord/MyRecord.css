@@ -1,0 +1,240 @@
+.my-record-page {
+  padding: 0 160px;
+  max-width: 1280px;
+  margin: 0 auto;
+  background: white;
+  box-sizing: border-box;
+}
+
+.record-cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  height: 288px;
+  margin-bottom: 56px;
+}
+
+.record-card {
+  background: #414141;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  border: 8px solid #FFCC21;
+  box-sizing: border-box;
+}
+
+.record-card-title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #FF8C00;
+  margin-bottom: 8px;
+}
+
+.record-card-subtitle {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  color: white;
+}
+
+.chart-section {
+  width: 100%;
+}
+
+.body-fat-chart {
+  background: #414141;
+  color: white;
+  padding: 24px;
+  margin-bottom: 56px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-header h3 {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chart-period {
+  font-size: 12px;
+  color: #999;
+}
+
+.exercise-data-section {
+  background: #414141;
+  color: white;
+  padding: 24px;
+  margin-bottom: 56px;
+  border-left: 8px solid #FFCC21;
+}
+
+.exercise-data-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.exercise-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.exercise-icon {
+  font-size: 16px;
+}
+
+.exercise-title {
+  font-size: 15px;
+  font-weight: 400;
+  color: #FF8C00;
+}
+
+.exercise-date {
+  font-size: 11px;
+  font-weight: 300;
+  color: white;
+  margin-left: auto;
+}
+
+.exercise-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exercise-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #555;
+}
+
+.exercise-name {
+  font-size: 11px;
+  font-weight: 300;
+  color: white;
+  flex: 1;
+}
+
+.exercise-time {
+  font-size: 11px;
+  font-weight: 300;
+  color: #FF8C00;
+  margin: 0 16px;
+}
+
+.exercise-calories {
+  font-size: 11px;
+  font-weight: 300;
+  color: #FF8C00;
+}
+
+.diary-section {
+  margin-bottom: 56px;
+}
+
+.diary-header {
+  margin-bottom: 24px;
+}
+
+.diary-header h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #414141;
+  margin: 0;
+}
+
+.diary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.diary-card {
+  background: white;
+  border: 2px solid #707070;
+  padding: 16px;
+  min-height: 231px;
+}
+
+.diary-date {
+  font-size: 11px;
+  font-weight: 400;
+  color: #414141;
+  margin-bottom: 4px;
+}
+
+.diary-time {
+  font-size: 11px;
+  font-weight: 300;
+  color: #414141;
+  margin-bottom: 12px;
+}
+
+.diary-content {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #414141;
+}
+
+.load-more-section {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.load-more-button {
+  background: #FF8C00;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 304px;
+  height: 56px;
+}
+
+.load-more-button:hover {
+  background: #e67e00;
+}
+
+@media (max-width: 768px) {
+  .record-cards-section {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .my-record-page {
+    padding: 16px;
+  }
+  
+  .exercise-data-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .diary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

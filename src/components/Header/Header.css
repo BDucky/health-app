@@ -1,0 +1,111 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: #414141;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 160px;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #FF8C00;
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  transition: color 0.2s;
+  font-family: 'Hiragino Sans', 'ヒラギノ角ゴシック', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+}
+
+.nav-item:hover {
+  color: #FF8C00;
+}
+
+.nav-item.active {
+  color: #FF8C00;
+}
+
+.nav-icon {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 8px;
+}
+
+.menu-line {
+  width: 20px;
+  height: 2px;
+  background: #FFFFFF;
+}
+
+.menu-button span {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.menu-button:hover span {
+  background-color: #ff8c00;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  
+  .header-container {
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,52 @@
+.footer {
+  background: #414141;
+  color: #FFFFFF;
+  padding: 56px 0;
+  margin-top: 120px;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 160px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  transition: color 0.2s;
+  font-family: 'Hiragino Sans', 'ヒラギノ角ゴシック', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+}
+
+.footer-link:hover {
+  color: #FF8C00;
+}
+
+@media (max-width: 1024px) {
+  .footer-content {
+    padding: 0 32px;
+  }
+  
+  .footer-links {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
