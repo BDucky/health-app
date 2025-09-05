@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import { HealthyNavigation } from './components/Header/Header';
+import { HealthyFooter } from './components/Footer/Footer';
 import TopPage from './pages/TopPage/TopPage';
 import MyRecord from './pages/MyRecord/MyRecord';
 import Column from './pages/Column/Column';
@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
+        <HealthyNavigation />
         <main className="main-content">
           <Routes>
             <Route path="/" element={<TopPage />} />
@@ -19,7 +19,7 @@ function App() {
             <Route path="/column" element={<Column />} />
           </Routes>
         </main>
-        <Footer />
+        <HealthyFooter />
       </div>
     </Router>
   );

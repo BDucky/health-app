@@ -1,9 +1,10 @@
 .chart-container {
   width: 100%;
-  background: #2c2c2c;
-  border-radius: 8px;
-  padding: 20px;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
   color: white;
+  height: 100%;
 }
 
 .chart-header {
